@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册首页</title>
+	<meta charset="utf-8">
+	<!-- 引入CSS -->
+	<link rel="stylesheet" type="text/css" href="../static/css/index2.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/static/image/512.png">
+	<!-- 引入JS -->
+	<script type="text/javascript" src="/static/js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="/static/js/index2.js"></script>
+
+</head>
+<body>
+<form action="" method="POST">
+
+    {% if message %}
+        <script>
+            alert('该用户昵称已存在')
+        </script>
+
+    {% elif error %}
+        <script>
+            alert('该用户帐号已存在')
+        </script>
+
+    {% endif %}
+
+
+    <!-- 图片轮播 -->
+    <div class="banner">
+        <img src="/static/image/2222.jpg">
+        <img src="/static/image/5555.jpg">
+        <img src="/static/image/6666.jpg">
+        <img src="/static/image/7777.jpg">
+        <img src="/static/image/8888.jpg">
+    </div>
+
+	<div class="f1"></div>
+
+	<div class="front">
+		
+		<form>
+
+			<div>
+				<h1>欢迎使用</h1>
+			</div>
+
+			<div class="font-line">
+				<p>用户昵称</p>
+				<input type="text" name="name" placeholder="用户昵称" class="front-control">
+			</div>
+
+			<div class="font-line">
+				<p>用户账号</p>
+				<input type="text" name="account" placeholder="用户账号" class="front-control" id="pwd1">
+			</div>
+
+			<div class="font-line">
+				<p>设置密码</p>
+				<input type="password" name="password" placeholder="设置密码" class="front-control" id="pwd2" onblur="check()">
+				<span id="warning"> </span>
+			</div>	
+
+			<div class="font-line">
+				<p>邮箱地址</p>
+				<input type="email" name="emailid" placeholder="qq邮箱" class="front-control">
+
+			</div>
+
+			<div class="font-line">
+				<input type="checkbox" name="agree" checked="">我已同意<a href="#">霸王条款</a> & <a href="#">帝王条款</a>
+			</div>
+
+			<div>
+				<input type="submit" name="submit" class="registbutton" value="注册">
+			</div>
+
+		</form>
+
+	</div>
+</form>
+</body>
+</html>

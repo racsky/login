@@ -1,0 +1,90 @@
+/* 整体默认样式 */
+body,div,h1,p{
+	margin:0;
+	padding:0;
+}
+
+h1{
+	text-align:center;
+}
+
+.c1{
+	/*position:relative;*/
+	margin:0 auto;
+	padding-top:100px;
+}
+
+.f1{
+	height:200px;
+}
+
+
+img{
+	width:100%;
+	height:100%;
+}
+
+
+#back{
+	margin:0;
+	padding:0;
+	border:none;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	position:fixed;
+	display:block;
+	opacity:0.4;
+}
+
+/*图片轮播*/
+.back img:not(:first-child){
+	display:none;
+}
+
+
+.front{
+	width:520px;
+	height:420px;
+	border-top:200px;
+	line-height:100px;
+	margin:0 auto;
+	background:white;
+	position:relative;
+	text-align:center;
+	border-radius:15px;
+	opacity:1;
+}
+
+.font-line>p{
+	margin-left:60px;
+	font-size:20px;
+	float:left;
+	width:80px;
+	height:100px;
+	text-align:right;
+}
+
+
+.front-control{
+	width:300px;
+	height:50px;
+	font-size:18px;
+	border:1px solid grey;
+	border-radius:5px;
+	padding-left:5px;
+}
+
+.registbutton{
+	width:150px;
+	height:50px;
+	text-align:center;
+	line-height:40px;
+	border:1px solid red;
+	color:black;
+	background:green;
+	font-size:20px;
+	border-radius:10px;
+}
+
+
