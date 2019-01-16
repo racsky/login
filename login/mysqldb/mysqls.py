@@ -33,15 +33,12 @@ class Mysqlpython:
     # 执行sql命令
     def zhixing(self, sql, L=[]):
         self.open()
-
         self.cur.execute(sql, L)
         self.db.commit()
-
         self.close()
 
     # 查询功能
     def all(self, sql, L=[]):
-        # def all(self, sql):
         self.open()
         self.cur.execute(sql, L)
         result = self.cur.fetchall()

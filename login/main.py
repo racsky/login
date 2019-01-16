@@ -59,10 +59,11 @@ def find():
             email = sqlh.all(act,[account])[0][5]
 
             if act2==account and email==emailid:
-
-                mailserver = "smtp.qq.com"  # 邮箱服务器地址
-                username_send = '825532180@qq.com'
-                password = 'cztdzvatfubsbdia'
+				
+				# 邮箱服务器地址
+                mailserver = "smtp.qq.com"  
+                username_send = '88888888@qq.com'
+                password = '自己邮箱的密码口令'
                 username_recv = email
 
                 pwd = sqlh.all(act, [account])[0][3]
